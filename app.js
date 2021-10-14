@@ -6,11 +6,17 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 //My SQL
+//const connection = mysql.createConnection({
+//    host: 'us-cdbr-east-04.cleardb.com',
+//    user: 'bced8b2864e469',
+//    password: 'd1699e98',
+//    database: 'heroku_a4e2a197d807645'
+
 const connection = mysql.createConnection({
-    host: 'us-cdbr-east-04.cleardb.com',
-    user: 'bced8b2864e469',
-    password: 'd1699e98',
-    database: 'heroku_a4e2a197d807645'
+    host: 'localhost',
+    user: 'remoto',
+    password: 'Remoto$1',
+    database: 'DraegerPeru'
 });
 
 //Clientes
